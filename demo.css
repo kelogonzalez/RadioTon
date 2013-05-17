@@ -1,0 +1,364 @@
+@import url('reset.css');
+/* General Demo Style */
+
+body{
+    background:#e6eecc url(../images/beige_paper.png) repeat top left;
+	color: #333;
+	font-family: 'Terminal Dosis', Arial, sans-serif;
+	font-size: 24px;
+}
+.container{
+	position:relative;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+.clr{
+	clear: both;
+}
+.content{
+	position:relative;
+}
+h1{
+	margin:0px;
+	padding:20px;
+	font-size:49px;
+	color:#000;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.9);
+	text-align:center;
+	font-weight:400;
+}
+h1 span{
+    display:block;
+	font-size:14px;
+	color:#666;
+    font-style:italic;
+    font-family:Georgia, serif;
+	padding-top:5px;
+}
+/* Header Style */
+.header{
+	font-family:'Arial Narrow', Arial, sans-serif;
+	line-height: 24px;
+	font-size: 11px;
+	background: #000;
+	opacity: 0.9;
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	-moz-box-shadow: 1px 0px 2px #000;
+	-webkit-box-shadow: 1px 0px 2px #000;
+	box-shadow: 1px 0px 2px #000;
+}
+.header a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #ddd;
+	display: block;
+	float: left;
+}
+.header a:hover{
+	color: #fff;
+}
+.header span.right{
+	float: right;
+}
+.header span.right a{
+	float: none;
+	display: inline;
+}
+.more{
+	position:relative;
+	clear:both;
+    font-size: 11px;
+    padding: 20px 0px;
+    text-transform:uppercase;
+    width: 390px;
+    height:55px;
+    margin: 0 auto;
+}
+.more ul{
+	display:block;
+	text-align:center;
+}
+.more ul li{
+	display: block;
+    padding: 4px 2px;
+    float:left;
+}
+.more ul li.selected a,
+.more ul li.selected a:hover{
+	background:#0099c5;
+	color:#fff;
+	text-shadow:none;
+    font-weight:bold;
+}
+.more ul li a{
+	color:#555;
+    float:left;
+	background:#fff;
+    width:64px;
+	padding: 2px 5px;
+	-moz-box-shadow:1px 1px 2px #aaa;
+	-webkit-box-shadow:1px 1px 2px #aaa;
+	box-shadow:1px 1px 2px #aaa;
+}
+.more ul li a:hover{
+	background:#000;
+	color:#fff;
+}
+
+h1 {
+  text-align: center;
+	padding-top: 50px;
+	font-size: 35px;
+	font-family: "Segoe UI";
+    font: 100 40px / 25px "Century Gothic";
+    text-align: center;
+    color: #666;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, .5);
+}
+
+
+/*PopUp*/
+
+#dialog-overlay {
+ 
+    /* set it to fill the whil screen */
+    width:100%; 
+    height:100%;
+     
+    /* transparency for different browsers */
+    filter:alpha(opacity=50); 
+    -moz-opacity:0.5; 
+    -khtml-opacity: 0.5; 
+    opacity: 0.5; 
+    background:#000; 
+ 
+    /* make sure it appear behind the dialog box but above everything else */
+    position:absolute; 
+    top:0; left:0; 
+    z-index:3000; 
+ 
+    /* hide it by default */
+    display:none;
+}
+ 
+ 
+#dialog-box {
+     
+    /* css3 drop shadow */
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+     
+    /* css3 border radius */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+     
+    background:#eee;
+    /* styling of the dialog box, i have a fixed dimension for this demo */
+    width:328px; 
+     
+    /* make sure it has the highest z-index */
+    position:absolute; 
+    z-index:5000; 
+ 
+    /* hide it by default */
+    display:none;
+}
+ 
+#dialog-box .dialog-content {
+    /* style the content */
+    text-align:left; 
+    padding:10px; 
+    margin:13px;
+    color:#666; 
+    font-family:arial;
+    font-size:11px; 
+}
+ 
+a.button {
+    /* styles for button */
+    margin:10px auto 0 auto;
+    text-align:center;
+    display: block;
+    width:50px;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+     
+    /* button color */
+    background-color: #e33100;
+     
+    /* css3 implementation :) */
+    /* rounded corner */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+     
+    /* drop shadow */
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+     
+    /* text shaow */
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+     
+}
+ 
+a.button:hover {
+    background-color: #c33100;  
+}
+ 
+/* extra styling */
+#dialog-box .dialog-content p {
+    font-weight:700; margin:0;
+}
+ 
+#dialog-box .dialog-content ul {
+    margin:10px 0 10px 20px; 
+    padding:0; 
+    height:50px;
+}
+
+/*Imagenes de Familia*/
+
+<style>
+
+.imagepluscontainer{ /* main image container */
+position: relative;
+z-index: 1;
+}
+
+.imagepluscontainer img{ /* CSS for image within container */
+position: relative;
+z-index: 2;
+-moz-transition: all 0.5s ease; /* Enable CSS3 transition on all props */
+-webkit-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.imagepluscontainer:hover img{ /* CSS for image when mouse hovers over main container */
+-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+-moz-transform: scale(1.05, 1.05);
+-webkit-transform: scale(1.05, 1.05);
+-ms-transform: scale(1.05, 1.05);
+-o-transform: scale(1.05, 1.05);
+transform: scale(1.05, 1.05);
+}
+
+.imagepluscontainer div.desc{ /* CSS for desc div of each image. */
+position: absolute;
+width: 90%;
+z-index: 1; /* Set z-index to that less than image's, so it's hidden beneath it */
+bottom: 0; /* Default position of desc div is bottom of container, setting it up to slide down */
+left: 5px;
+padding: 8px;
+background: rgba(0, 0, 0, 0.8); /* black bg with 80% opacity */
+color: white;
+-moz-border-radius: 0 0 8px 8px; /* CSS3 rounded borders */
+-webkit-border-radius: 0 0 8px 8px;
+border-radius: 0 0 8px 8px;
+opacity: 0; /* Set initial opacity to 0 */
+-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8); /* CSS3 shadows */
+-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+-moz-transition: all 0.5s ease 0.5s; /* Enable CSS3 transition on desc div. Final 0.5s value is the delay before animation starts */
+-webkit-transition: all 0.5s ease 0.5s;
+-o-transition: all 0.5s ease 0.5s;
+-ms-transition: all 0.5s ease 0.5s;
+transition: all 0.5s ease 0.5s;
+}
+
+.imagepluscontainer div.desc a{
+color: white;
+}
+
+.imagepluscontainer:hover div.desc{ /* CSS for desc div when mouse hovers over main container */
+-moz-transform: translate(0, 100%);
+-webkit-transform: translate(0, 100%);
+-ms-transform: translate(0, 100%);
+-o-transform: translate(0, 100%);
+transform: translate(0, 100%);
+opacity:1; /* Reveal desc DIV fully */
+}
+
+/*### Below CSS when applied to desc DIV slides the desc div from the right edge of the image ###*/
+
+.imagepluscontainer div.rightslide{
+width: 150px; /* reset from default */
+top:15px;
+right:0;
+left:auto;  /* reset from default */
+bottom:auto;  /* reset from default */
+padding-left:15px;
+-moz-border-radius: 0 8px 8px 0;
+-webkit-border-radius: 0 8px 8px 0;
+border-radius: 0 8px 8px 0;
+}
+
+.imagepluscontainer:hover div.rightslide{
+-moz-transform: translate(100%, 0);
+-webkit-transform: translate(100%, 0);
+-ms-transform: translate(100%, 0);
+-o-transform: translate(100%, 0);
+transform: translate(100%, 0);
+}
+
+/*### Below CSS when applied to desc DIV slides the desc div from the left edge of the image ###*/
+
+.imagepluscontainer div.leftslide{
+width: 150px;  /* reset from default */
+top:15px;
+left:0;
+bottom:auto;  /* reset from default */
+padding-left:15px;
+-moz-border-radius: 8px 0 0 8px;
+-webkit-border-radius: 8px 0 0 8px;
+border-radius: 8px 0 0 8px;
+}
+
+.imagepluscontainer:hover div.leftslide{
+-moz-transform: translate(-100%, 0);
+-webkit-transform: translate(-100%, 0);
+-ms-transform: translate(-100%, 0);
+-o-transform: translate(-100%, 0);
+transform:translate(-100%, 0);
+}
+
+/*### Below CSS when applied to desc DIV slides the desc div from the top edge of the image ###*/
+
+.imagepluscontainer div.upslide{
+top:0;
+bottom:auto;  /* reset from default */
+padding-bottom:10px;
+-moz-border-radius: 8px 8px 0 0;
+-webkit-border-radius: 8px 8px 0 0;
+border-radius: 8px 8px 0 0;
+}
+
+.imagepluscontainer:hover div.upslide{
+-moz-transform: translate(0, -100%);
+-webkit-transform: translate(0, -100%);
+-ms-transform: translate(0, -100%);
+-o-transform: translate(0, -100%);
+transform:translate(0, -100%);
+}
+
+</style>
+
+
+
+
+
+
+
+
